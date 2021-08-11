@@ -16,6 +16,17 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         setCount()
+
+        binding.btnSum.setOnClickListener {
+            count++
+            setCount()
+        }
+
+        binding.btnSum.setOnLongClickListener {
+            count = 0
+            setCount()
+            true
+        }
     }
 
     private fun setCount() {
