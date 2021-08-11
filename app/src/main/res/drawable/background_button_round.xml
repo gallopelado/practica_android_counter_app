@@ -3,16 +3,21 @@
     <item android:state_pressed="false">
         <shape
             android:shape="oval">
-            <solid
-                android:color="@color/purple_500" />
+            <solid android:color="@color/purple_500" />
+            <size android:width="@dimen/button_size" android:height="@dimen/button_size"/>
+            <padding
+                android:top="@dimen/common_padding_min"
+                android:bottom="@dimen/common_padding_min"
+                android:right="@dimen/common_padding_min"
+                android:left="@dimen/common_padding_min"/>
         </shape>
     </item>
 
-    <item android:state_pressed="true">
+    <!--<item android:state_pressed="true">
         <shape
             android:shape="oval">
             <solid
                 android:color="@color/purple_700" />
         </shape>
-    </item>
+    </item>-->
 </selector>
