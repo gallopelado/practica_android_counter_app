@@ -3,8 +3,17 @@
     <item android:state_pressed="false">
         <shape
             android:shape="oval">
-            <solid android:color="@color/purple_500" />
+            <!--<solid android:color="@color/purple_500" />-->
+            <gradient
+                android:startColor="@color/purple_500"
+                android:endColor="@color/purple_200"
+                android:gradientRadius="80%p"
+                android:type="radial"
+                android:centerX="0.5"
+                android:centerY="0.5"/>
+
             <size android:width="@dimen/button_size" android:height="@dimen/button_size"/>
+
             <padding
                 android:top="@dimen/common_padding_min"
                 android:bottom="@dimen/common_padding_min"
